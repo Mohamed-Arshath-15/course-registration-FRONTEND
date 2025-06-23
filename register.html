@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <title>REGISTER COURSE</title>
+         <style>
+           
+body {
+    background-color: #000;
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+form {
+    margin: 40px auto;
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+input,
+select,
+button {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+
+button {
+    background-color: #2a2e2a;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    border: none;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #131613;
+}
+
+           
+        
+        </style>
+    </head>
+    <body>
+        <h1 style="color: rgb(239, 239, 242);">DEVELOP YOUR SKILLS BY REGISTER A COURSE</h1>
+        <form action="http://localhost:8080/course/entrolled" method="post">
+            <label for="name" >Enter Your Name</label><br>
+            <input name="name" type="text"><br><br>
+            <label for="Email" >Enter Your Email</label><br>
+            <input name="email" type="text"><br><br>
+            <label for="coursename" >Choose Course</label><br>
+            <select name="coursename">
+                <option value="java">JAVA</option>
+                <option value="database">DATABASE</option>
+                <option value="spring boot">SPRINGBOOT</option>
+                <option value="project">PROJECT</option>
+
+            </select><br><br>
+            <button type="submit">Register</button>
+        </form>
+
+       
+    </body>
+</html>
